@@ -1,5 +1,3 @@
-
-//<section className="relative bg-[url(https://res.cloudinary.com/djsdqleik/image/upload/v1738612001/church/lgxwlwedwnklfboclz4t.jpg)] w-screen h-85 md:h-140 bg-cover flex items-center justify-start"></section>
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -11,10 +9,9 @@ const images = [
   "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/pdqbmaensbw2xckpe3y8.jpg",
 ];
 
-export default function Banner() {
+export default function CarrouselBanner() {
   return (
- 
-           <section className="bg-cover mt-16 relative w-full h-[300px] md:h-[600px] overflow-hidden flex items-center justify-start">
+    <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
       {/* Carrusel de Imágenes */}
       <Swiper
         modules={[Autoplay, Pagination]}
@@ -32,9 +29,17 @@ export default function Banner() {
             />
           </SwiperSlide>
         ))}
-        </Swiper>
-        <div className="absolute inset-0 bg-zinc-900/65 z-1"></div>
-      </section>
-   
+      </Swiper>
+
+      {/* Texto sobre el carrusel */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/50 p-6">
+        <p className="text-2xl md:text-4xl font-extrabold mb-1">
+          Sólo falta que tú estés aquí.
+        </p>
+        <p className="text-xl md:text-2xl font-light mb-7">
+          Ven tal como eres. ¡Jesús te ama!
+        </p>
+      </div>
+    </section>
   );
 }
