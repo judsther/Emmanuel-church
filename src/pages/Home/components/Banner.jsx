@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const images = [
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612001/church/lgxwlwedwnklfboclz4t.jpg",
   "https://res.cloudinary.com/djsdqleik/image/upload/v1738612007/church/bxlggit2dyeqehdzmr7z.jpg",
   "https://res.cloudinary.com/djsdqleik/image/upload/v1738612007/church/rzfq5wzaj2mvdozenmck.jpg",
   "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/pdqbmaensbw2xckpe3y8.jpg",

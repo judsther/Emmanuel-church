@@ -4,7 +4,7 @@ export default function Clinica() {
   return (
     <div>
     
-           <section className="  bg-blue-900 min-h-60 md:min-h-90 flex flex-col md:flex-row items-center">
+           <section className="  bg-indigo-950 min-h-60 md:min-h-90 flex flex-col md:flex-row items-center">
            <div className="w-full md:w-1/2 m-4">
       <img className=" object-contain p-4" src="https://res.cloudinary.com/djsdqleik/image/upload/v1738612010/church/vlxqfj2cffq2w77pldbc.jpg" alt="" />
         </div>

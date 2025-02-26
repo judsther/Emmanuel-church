@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,12 +33,14 @@ export default function Navbar() {
 
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
+              <Link to="/">
               <img className="h-10 w-auto" src="https://res.cloudinary.com/djsdqleik/image/upload/v1739663131/church/w0mtnmqfz5rzakyfpskg.png" alt="Logo" />
+              </Link>
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4 ms-4">
-                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Misión</a>
-                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Nosotros</a>
+                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Iglesia</a>
+                <Link to="/ministerios" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Ministerios</Link>
                 <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Proyectos</a>
                 <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Calendario</a>
               </div>

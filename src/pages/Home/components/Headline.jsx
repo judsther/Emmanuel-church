@@ -2,7 +2,7 @@
 export default function Headline() {
   return (
     <div className="">
-      <section className="overflow-hidden bg-indigo-800 min-h-100 md:min-h-80 flex items-center">
+      <section className="overflow-hidden bg-indigo-950 min-h-100 md:min-h-80 flex items-center">
       <div className="w-full text-white text-center z-10 mt-6 p-4">
         <p className="text-2xl md:text-4xl font-extrabold mb-1">
         ¡Bienvenido a casa!

@@ -17,10 +17,8 @@ export default function Home() {
       <TextoBanner />
       <Banner />
       <Headline />
-     
       <Secciones />
       <Clinica />
-   
      <Footer />
      </div>
     </>
