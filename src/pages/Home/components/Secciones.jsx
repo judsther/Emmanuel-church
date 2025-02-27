@@ -1,4 +1,4 @@
-import { EnvelopeOpenIcon, HeartIcon, NewspaperIcon } from "@heroicons/react/20/solid";
+
 
 
 export default function Secciones() {
@@ -9,7 +9,7 @@ export default function Secciones() {
        <section className="grid  grid-cols-1 md:grid-cols-3 w-full h-150 md:h-55 text-white font-semibold text-center text-2xl mb-6">
         <div className="m-2 p-2 flex items-center justify-center bg-indigo-800 hover:transform hover:scale-105 hover:bg-amber-200">
           <h2 className="" style={{ fontSize: "14pt", placeItems: "center" }}>
-            <EnvelopeOpenIcon className="size-8" />
+          <i className="bi bi-box2-heart"></i> <br />
             Oración
             <p style={{ fontSize: "12pt" }} className="font-light">
               Déjanos orar por tu petición.
@@ -18,7 +18,7 @@ export default function Secciones() {
         </div>
         <div className="m-2 p-2 flex items-center justify-center bg-indigo-900 hover:transform hover:scale-105 hover:bg-amber-200">
           <h2 className="place-items-center" style={{ fontSize: "14pt", placeItems: "center"  }}>
-            <HeartIcon className="size-8" />
+          <i className="bi bi-heart"></i> <br />
             Ministerios
             <p style={{ fontSize: "12pt" }} className="font-light">
               Únete y sirve con nosotros.
@@ -27,7 +27,7 @@ export default function Secciones() {
         </div>
         <div className="m-2 p-2 flex items-center justify-center bg-indigo-700 hover:transform hover:scale-105 hover:bg-amber-200">
           <h2 className="place-items-center" style={{ fontSize: "14pt", placeItems: "center"  }}>
-            <NewspaperIcon className="size-8" />
+          <i className="bi bi-house"></i> <br />
             Actividades
             <p style={{ fontSize: "12pt" }} className="font-light">
               ¡Cuán bueno es habitar juntos!
