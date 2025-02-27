@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white-800 fixed top-0 left-0 w-full bg-neutral-50/80 backdrop-blur-xs z-50">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="inset-y-0 left-0 flex items-center sm:hidden">
             {/* Botón para abrir/cerrar el menú */}
