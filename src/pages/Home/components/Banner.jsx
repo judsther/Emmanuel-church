@@ -6,16 +6,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const images = [
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612001/church/lgxwlwedwnklfboclz4t.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612007/church/bxlggit2dyeqehdzmr7z.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612007/church/rzfq5wzaj2mvdozenmck.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/pdqbmaensbw2xckpe3y8.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612003/church/fqlcfb86u7gsfgnfqrea.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1738611980/church/mh8uaeff5wn0zkbtu8js.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/mo2gbiekch4k4gfpdgei.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612009/church/xkkrlwx7hrarnuxc7sjl.jpg"
 ];
 
 export default function Banner() {
   return (
  
-           <section className="bg-cover mt-16 relative w-full h-[300px] md:h-[600px] overflow-hidden flex items-center justify-start">
+           <section className="bg-cover relative w-full h-[300px] md:h-[600px] overflow-hidden flex items-center justify-start">
       {/* Carrusel de Imágenes */}
       <Swiper
         modules={[Autoplay, Pagination]}

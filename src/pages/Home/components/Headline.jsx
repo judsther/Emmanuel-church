@@ -2,8 +2,11 @@
 export default function Headline() {
   return (
     <div className="">
-      <section className="overflow-hidden bg-indigo-950 min-h-100 md:min-h-80 flex items-center">
-      <div className="w-full text-white text-center z-10 mt-6 p-4">
+      <section className="h-[500px]  bg-neutral-50">
+      <div className="w-full h-full flex flex-col items-center justify-center text-zinc-600 text-center z-10 p-4">
+        <div className="w-20 h-20 md:w-25 md:h-25 m-4">
+        <img src="https://res.cloudinary.com/djsdqleik/image/upload/v1739662964/church/tjekueix26jhmgsrhta3.png" alt="logo de iglesias mision centro americana" />
+        </div>
         <p className="text-2xl md:text-4xl font-extrabold mb-1">
         ¡Bienvenido a casa!
         </p>
@@ -14,10 +17,10 @@ export default function Headline() {
         Horarios de Servicio:
         </p>
         <p style={{fontSize:"14pt"}} className="md:text-2xl font-medium mb-7">
-            <span className="text-amber-200">Domingo:</span> culto domínical 9:00am y culto general 4:30pm <br />
-            <span className="text-amber-200">Lunes:</span> oración 5:00pm <br />
-            <span className="text-amber-200">Miércoles:</span> Estudio bíblico 5:00pm <br />
-            <span className="text-amber-200">Jueves:</span> Culto femenil 4:30pm <br />
+            <span className="text-indigo-400">Domingo:</span> Culto domínical 9:00am y culto general 4:30pm <br />
+            <span className="text-indigo-400">Lunes:</span> Oración 5:00pm <br />
+            <span className="text-indigo-400">Miércoles:</span> Estudio bíblico 5:00pm <br />
+            <span className="text-indigo-400">Jueves:</span> Culto femenil 4:30pm <br />
         </p>
       </div>
       </section>

@@ -11,7 +11,7 @@ export default function TextoBanner() {
               Jesucristo
             </span>
             <br />{" "}
-            <span className="underline decoration-dotted decoration-cyan-200">
+            <span className="underline decoration-dotted decoration-indigo-300">
               salva!
             </span>
           </p>

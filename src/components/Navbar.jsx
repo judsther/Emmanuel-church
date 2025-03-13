@@ -5,7 +5,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white-800 fixed top-0 left-0 w-full bg-neutral-50/80 backdrop-blur-xs z-50">
+    <div className="flex justify-end">
+    <nav className=" fixed rounded-4xl bg-indigo-500 m-6 z-50 drop-shadow-lg shadow-zinc-800">
       <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="inset-y-0 left-0 flex items-center sm:hidden">
@@ -32,17 +33,21 @@ export default function Navbar() {
           </div>
 
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
+            <div className="flex shrink-0 items-center group">
               <Link to="/">
-              <img className="h-10 w-auto" src="https://res.cloudinary.com/djsdqleik/image/upload/v1739663131/church/w0mtnmqfz5rzakyfpskg.png" alt="Logo" />
+              <img className="h-10 w-auto absolute transition-opacity duration-300 group-hover:opacity-0" 
+              src="https://res.cloudinary.com/djsdqleik/image/upload/v1741453742/Subtract_qhklqx.png" alt="Logo" />
+              <img className="h-10 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
+              src="https://res.cloudinary.com/djsdqleik/image/upload/v1739662964/church/tjekueix26jhmgsrhta3.png" alt="Logo" />
               </Link>
+
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4 ms-4">
-                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Iglesia</a>
-                <Link to="/ministerios" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Ministerios</Link>
-                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Proyectos</a>
-                <a href="#" className="rounded-md px-3 py-4 text-sm font-medium text-gray-600 hover:bg-gray-700 hover:text-white">Calendario</a>
+              <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
+                <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
+                <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
+                <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Calendario</Link>
               </div>
             </div>
           </div>
@@ -52,12 +57,13 @@ export default function Navbar() {
       {/* Menú móvil controlado por estado */}
       <div className={`${menuOpen ? "block" : "hidden"} sm:hidden`} id="mobile-menu">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
-          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+          <Link to="/ministerios" className="rounded-4xl block bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
+          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
+          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
+          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Calendario</Link>
         </div>
       </div>
     </nav>
+    </div>
   );
 }
