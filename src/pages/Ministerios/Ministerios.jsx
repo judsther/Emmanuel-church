@@ -2,6 +2,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import MailForm from "./components/MailForm";
 
 const imgs = [
   {
@@ -94,22 +95,7 @@ export default function Ministerios() {
         </div>
         
         <div>
-          
-          <form className="flex flex-col gap-4 items-end justify-center" action="">
-            <div>
-            <label htmlFor="" className="">Email: </label>
-           <input type="email" className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
-           </div>
-           <div>
-           <label htmlFor="" className="">Mensaje: </label>
-           <input type="text" className=" w-70 md:w-80 h-20 border border-amber-400 bg-white rounded-md" />
-           </div>
-           <button type="submit" className="py-2 px-4 bg-white border border-amber-400 hover:bg-amber-200 shadow-md text-center text-zinc-800 rounded font-sans font-semibold">
-              Enviar
-           </button>
-          </form>
-        
-        
+     <MailForm />
         </div>
 
         </div>
