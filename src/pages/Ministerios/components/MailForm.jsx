@@ -17,7 +17,7 @@ export default function MailForm() {
     const handleSubmit = async (e) => {
           e.preventDefault();
 
-          const response = await fetch("http://jud-dev.infinityfreeapp.com/sendMail.php", 
+          const response = await fetch("https://jud-dev.infinityfreeapp.com/sendMail.php", 
             {
             method: "POST",
             headers: {"Content-Type": "application/json"},
