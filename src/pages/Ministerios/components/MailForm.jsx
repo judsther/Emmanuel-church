@@ -17,7 +17,7 @@ export default function MailForm() {
     const handleSubmit = async (e) => {
           e.preventDefault();
 
-          const response = await fetch("https://jud-dev.infinityfreeapp.com/sendMail.php", 
+          const response = await fetch("https://emmanuel-church-six.vercel.app/api/sendMail", 
             {
             method: "POST",
             headers: {"Content-Type": "application/json"},
