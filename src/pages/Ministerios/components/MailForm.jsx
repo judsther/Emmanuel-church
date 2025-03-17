@@ -12,12 +12,38 @@ export default function MailForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+
+    try {
+     
+      const response = await fetch("https://formsubmit.co/ajax/mcasanvicente@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json(); 
+
+      if (result.success) {
+        alert("¡Mensaje enviado con éxito!"); 
+        setFormData({ name: "", number: "", email: "", message: "" }); 
+      } else {
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+      }
+    } catch (error) {
+      console.error("Error al enviar el mensaje:", error);
+      alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+    }
+  };
+
   return (
     <div>
       <form
         className="flex flex-col gap-4 items-end justify-center"
-        action="https://formsubmit.co/mcasanvicente@gmail.com"
-        method="POST"
+        onSubmit={handleSubmit}
       >
         <div>
           <label htmlFor="name" className="">
