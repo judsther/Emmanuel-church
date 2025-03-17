@@ -17,7 +17,7 @@ export default function MailForm() {
 
     try {
      
-      const response = await fetch("https://formsubmit.co/ajax/mcasanvicente@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/23c839649ee8d0165b1fc8d4731e2abe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
