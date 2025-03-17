@@ -15,37 +15,48 @@ export default function MailForm() {
     };
 
     const handleSubmit = async (e) => {
-          e.preventDefault();
-
-          const response = await fetch("https://emmanuel-church-six.vercel.app/api/sendMail", 
-            {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(formData),
+      e.preventDefault();
+  
+      try {
+          const response = await fetch("https://emmanuel-church-six.vercel.app/api/sendMail", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
           });
-
-         const result = await response.json();
-         alert(result.message);    
-    };    
+  
+          const text = await response.text();
+          let result;
+          try {
+              result = JSON.parse(text);
+          } catch (error) {
+              throw new Error("Respuesta inválida del servidor: " + text);
+          }
+  
+          alert(result.message);
+      } catch (error) {
+          console.error("Error en handleSubmit:", error);
+          alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+      }
+  };
 
   return (
     <div>
           <form className="flex flex-col gap-4 items-end justify-center" onSubmit={handleSubmit}>
           <div>
-           <label htmlFor="" className="">Nombre: </label>
-           <input type="text" name="name" placeholder=" tu nombre" required onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
+           <label htmlFor="name" className="">Nombre: </label>
+           <input type="text" name="name" id="name" autoComplete="name" placeholder=" tu nombre" required onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
            </div>
             <div>
-            <label className="">Email: </label>
-           <input type="email" name="email" placeholder=" tucorreo@ejemplo.com" required onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
+            <label htmlFor="email" className="">Email: </label>
+           <input type="email" autoComplete="email" name="email" id="email" placeholder=" tucorreo@ejemplo.com" required onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
            </div>
            <div>
-           <label htmlFor="" className="">Mensaje: </label>
-           <textarea name="message" placeholder=" tu mensaje" required onChange={handleChange} className=" w-80 h-18 border border-amber-400 bg-white rounded-md" />
+           <label htmlFor="message" className="">Mensaje: </label>
+           <textarea name="message" id="message" placeholder=" tu mensaje" required onChange={handleChange} className=" w-80 h-18 border border-amber-400 bg-white rounded-md" />
            </div>
            <div>
-           <label htmlFor="" className="">Número: </label>
-           <input type="text" name="number" placeholder=" tu número de WhatsApp (opcional)" onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
+           <label htmlFor="number" className="">Número: </label>
+           <input type="text" name="number" id="number" autoComplete="number" placeholder=" tu número de WhatsApp (opcional)" onChange={handleChange} className=" w-80 h-10 border border-amber-400 bg-white rounded-md" />
            </div>
            <button type="submit" className="py-2 px-4 bg-white border border-amber-400 hover:bg-amber-200 shadow-md text-center text-zinc-800 rounded font-sans font-semibold">
               Enviar
