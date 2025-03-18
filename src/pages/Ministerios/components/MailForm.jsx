@@ -42,7 +42,7 @@ export default function MailForm() {
   return (
     <div>
       <form
-        className="flex flex-col gap-4 items-end justify-center"
+        className="flex flex-col gap-4 items-center md:items-end  justify-center"
         onSubmit={handleSubmit}
       >
         <div>
@@ -57,12 +57,12 @@ export default function MailForm() {
             placeholder=" tu nombre"
             required
             onChange={handleChange}
-            className=" w-80 h-10 border border-amber-400 bg-white rounded-md"
+            className="w-full md:w-80 h-10 border border-amber-400 bg-white rounded-md"
           />
         </div>
         <div>
           <label htmlFor="email" className="">
-            Email:{" "}
+            Correo:{" "}
           </label>
           <input
             type="email"
@@ -72,7 +72,7 @@ export default function MailForm() {
             placeholder=" tucorreo@ejemplo.com"
             required
             onChange={handleChange}
-            className=" w-80 h-10 border border-amber-400 bg-white rounded-md"
+            className="w-full md:w-80 h-10 border border-amber-400 bg-white rounded-md"
           />
         </div>
         <div>
@@ -85,7 +85,7 @@ export default function MailForm() {
             placeholder=" tu mensaje"
             required
             onChange={handleChange}
-            className=" w-80 h-18 border border-amber-400 bg-white rounded-md"
+            className="w-full  md:w-80 h-18 border border-amber-400 bg-white rounded-md"
           />
         </div>
         <div>
@@ -99,12 +99,12 @@ export default function MailForm() {
             autoComplete="number"
             placeholder=" tu número de WhatsApp (opcional)"
             onChange={handleChange}
-            className=" w-80 h-10 border border-amber-400 bg-white rounded-md"
+            className="w-full md:w-80 h-10 border border-amber-400 bg-white rounded-md"
           />
         </div>
         <button
           type="submit"
-          className="py-2 px-4 bg-white border border-amber-400 hover:bg-amber-200 shadow-md text-center text-zinc-800 rounded font-sans font-semibold"
+          className="py-2 px-4 mt-3 bg-indigo-500 border border-amber-400 hover:bg-amber-200 active:bg-amber-200 shadow-md text-center text-white hover:text-zinc-600 active:text-zinc-600 rounded font-sans font-semibold"
         >
           Enviar
         </button>
