@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function TextoBanner() {
   return (
     <div>
-            <div className="absolute flex flex-col gap-y-1 md:gap-y-8 ml-15 lg:ml-28 text-white text-start items-start mt-15 md:mt-45 z-10">
+            <div className="absolute flex flex-col gap-y-1 md:gap-y-8 ms-8 lg:ms-28 text-white text-start items-start mt-15 md:mt-45 z-10">
           <p className="text-4xl md:text-6xl font-extrabold">
             ¡Sólo <br />
             <span className="font-stretch-semi-expanded text-amber-200">

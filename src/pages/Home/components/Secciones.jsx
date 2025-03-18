@@ -10,7 +10,7 @@ export default function Secciones() {
 <hr className="border-2 border-indigo-400 rounded-4xl px-44 md:px-96 my-5" />
 
        <section className="h-[350px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-white font-semibold text-center text-2xl md:mt-5">
-        <div className="flex gap-6 w-max h-[300px] mx-20 ">
+        <div className="flex flex-row gap-8 w-max h-[300px] mx-10 md:mx-20 ">
 
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-indigo-400 outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-box2-heart p-3 text-5xl text-amber-200"></i>

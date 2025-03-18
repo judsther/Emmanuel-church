@@ -35,16 +35,16 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center group">
               <Link to="/">
-              <img className="h-10 w-auto absolute transition-opacity duration-300 group-hover:opacity-0" 
+              <img className="h-10 w-auto absolute transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0" 
               src="https://res.cloudinary.com/djsdqleik/image/upload/v1741453742/Subtract_qhklqx.png" alt="Logo" />
-              <img className="h-10 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
+              <img className="h-10 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" 
               src="https://res.cloudinary.com/djsdqleik/image/upload/v1739662964/church/tjekueix26jhmgsrhta3.png" alt="Logo" />
               </Link>
 
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4 ms-4">
-              <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
+              <Link to="/iglesia" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
                 <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
                 <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
                 <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-200 hover:text-gray-600">Calendario</Link>
@@ -57,10 +57,10 @@ export default function Navbar() {
       {/* Menú móvil controlado por estado */}
       <div className={`${menuOpen ? "block" : "hidden"} sm:hidden`} id="mobile-menu">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          <Link to="/ministerios" className="rounded-4xl block bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
-          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
-          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
-          <Link to="/ministerios" className="rounded-4xl block px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Calendario</Link>
+          <Link to="/iglesia" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
+          <Link to="/ministerios" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
+          <Link to="/ministerios" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
+          <Link to="/ministerios" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Calendario</Link>
         </div>
       </div>
     </nav>

@@ -42,11 +42,11 @@ export default function MailForm() {
   return (
     <div>
       <form
-        className="flex flex-col gap-4 items-center md:items-end  justify-center"
+        className="flex flex-col gap-4 items-center md:items-end text-zinc-500 justify-center"
         onSubmit={handleSubmit}
       >
         <div>
-          <label htmlFor="name" className="">
+          <label htmlFor="name" className="text-white">
             Nombre:{" "}
           </label>
           <input
@@ -61,7 +61,7 @@ export default function MailForm() {
           />
         </div>
         <div>
-          <label htmlFor="email" className="">
+          <label htmlFor="email" className="text-white">
             Correo:{" "}
           </label>
           <input
@@ -76,7 +76,7 @@ export default function MailForm() {
           />
         </div>
         <div>
-          <label htmlFor="message" className="">
+          <label htmlFor="message" className="text-white">
             Mensaje:{" "}
           </label>
           <textarea
@@ -89,7 +89,7 @@ export default function MailForm() {
           />
         </div>
         <div>
-          <label htmlFor="number" className="">
+          <label htmlFor="number" className="text-white">
             Número:{" "}
           </label>
           <input
