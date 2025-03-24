@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 
 const images = [
   "https://res.cloudinary.com/djsdqleik/image/upload/v1738612003/church/fqlcfb86u7gsfgnfqrea.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738611980/church/mh8uaeff5wn0zkbtu8js.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/mo2gbiekch4k4gfpdgei.jpg",
-  "https://res.cloudinary.com/djsdqleik/image/upload/v1738612009/church/xkkrlwx7hrarnuxc7sjl.jpg"
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1742424193/482030169_1060668312757106_7329793987348902809_n_ovcbie.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1742424204/484315176_1063987332425204_944934232276870587_n_jexy5p.jpg",
+  "https://res.cloudinary.com/djsdqleik/image/upload/v1742424190/485073891_3394127314055083_5446914150604550677_n_b85aup.jpg"
 ];
 
 export default function Banner() {

@@ -1,7 +1,7 @@
 
 import "swiper/css";
 import "swiper/css/pagination";
-import MailForm from "./components/MailForm";
+import MailForm from "../../components/MailForm";
 import MinisteriosSwiper from "./components/MinisteriosSwiper";
 /**<div className="mb-4 gap-3 flex flex-wrap justify-center">
       <i className="bi bi-book-half text-indigo-500 text-3xl"/>
@@ -16,14 +16,14 @@ export default function Ministerios() {
     <div className="">
 
       <section className="w-screen md:h-[550px] h-[650px] bg-neutral-100">
-        <div className="h-full w-full flex flex-col md:flex-row gap-2 items-center justify-center">
+        <div className="h-full w-full flex flex-col-reverse md:flex-row gap-2 items-center justify-center">
 
       <div className="h-[700px] md:h-full flex md:items-center items-end justify-center mx-18">
       <MinisteriosSwiper />
       </div>
 
-      <div className="md:h-full flex items-center justify-center text-[18px] text-center md:text-end bg-amber-200">
-      <p className="leading-relaxed font-extrabold md:text-6xl text-2xl ms-6 p-2 mx-8" >DESCUBRE TU LLAMADO, <span className="underline decoration-indigo-400 decoration-dotted">SIRVE</span> CON PASIÓN.</p>
+      <div className="md:h-full h-[500px] pt-18 md:pt-0 flex items-center justify-center text-[18px] text-center md:text-end bg-neutral-800">
+      <p className="leading-relaxed font-extrabold md:text-6xl text-2xl ms-6 p-2 mx-8 text-amber-200" >DESCUBRE TU <span className="underline decoration-indigo-400 decoration-dotted">LLAMADO</span>, SIRVE CON PASIÓN.</p>
      </div>
 
       </div>

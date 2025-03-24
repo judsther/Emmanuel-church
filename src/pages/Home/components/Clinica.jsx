@@ -10,7 +10,7 @@ export default function Clinica() {
         </div>
         <div className=" w-full md:w-1/2 text-zinc-700 text-center z-10 mt-6">
           <p className=" text-2xl md:text-4xl font-extrabold mb-1">
-            Clínica Emmanuel
+            Clínica Emanuel
           </p>
           <p className="text-xl md:text-2xl font-light mb-7">
             Abierto en horarios de culto.
