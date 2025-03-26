@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import MailForm from "../../components/MailForm";
 import MinisteriosSwiper from "./components/MinisteriosSwiper";
+import Socials from "../../components/Socials";
 /**<div className="mb-4 gap-3 flex flex-wrap justify-center">
       <i className="bi bi-book-half text-indigo-500 text-3xl"/>
       <i className="bi bi-music-note text-indigo-500 text-3xl"/>
@@ -15,8 +16,8 @@ export default function Ministerios() {
   return (
     <div className="">
 
-      <section className="w-screen md:h-[550px] h-[650px] bg-neutral-100">
-        <div className="h-full w-full flex flex-col-reverse md:flex-row gap-2 items-center justify-center">
+      <section className="w-screen md:h-[900px] lg:h-[550px] h-[650px] bg-neutral-100">
+        <div className="h-full flex flex-col-reverse lg:flex-row gap-2 items-center justify-center">
 
       <div className="h-[700px] md:h-full flex md:items-center items-end justify-center mx-18">
       <MinisteriosSwiper />
@@ -41,13 +42,16 @@ export default function Ministerios() {
       </section>
 
       {/* */}
-      <section className="h-[600px] md:h-[550px]  bg-neutral-700 ">
-        <div className="w-full h-full flex flex-col md:grid grid-cols-2 items-center p-5 justify-around text-zinc-100 text-center">
+      <section className="h-[800px] md:h-[550px]  bg-neutral-700 ">
+        <div className="w-full h-full flex flex-col md:grid grid-cols-2 items-center p-2 md:p-15 justify-around text-zinc-100 text-center">
         <div className="mb-6">
-         <p className="text-lg md:text-2xl"> <span className="font-bold">¿Te gustaría participar en alguno de nuestros ministerios?</span><br />Envíanos un correo o contáctanos <br />por cualquiera de estos medios:</p>
+         <p className="text-xl"> <span className="font-bold text-lg md:text-4xl">¿Te gustaría participar en alguno de nuestros ministerios?</span><br />Envíanos un correo o contáctanos por cualquiera de estos medios:</p>
+        <div className="text-4xl flex justify-center pt-8">
+          <Socials />
+        </div>
         </div>
         
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center md:text-zinc-600 md:bg-white md:rounded-md md:mx-32 md:py-9">
      <MailForm />
         </div>
         </div>

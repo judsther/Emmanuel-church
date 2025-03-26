@@ -1,5 +1,6 @@
 
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import Socials from "./Socials";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <p className="mt-2 text-sm">Llevando el mensaje de amor y esperanza.</p>
 
         {/* Contacto */}
-        <div className="mt-4 flex justify-center space-x-6">
+        <div className="mt-4 flex flex-col md:flex-row items-center justify-center text-start space-x-6 gap-4">
           <a href="mailto:contacto@iglesia.com" className="flex items-center space-x-2 hover:text-white">
             <EnvelopeIcon className="w-5 h-5" />
             <span>contacto@iglesia.com</span>
@@ -18,11 +19,14 @@ const Footer = () => {
             <PhoneIcon className="w-5 h-5" />
             <span>(123) 456-7890</span>
           </a>
+          <div className="text-zinc-400 text-2xl">
+          <Socials />
+          </div>
         </div>
 
         {/* Copyright */}
         <div className="mt-4 text-sm">
-          &copy; {new Date().getFullYear()} Emmanuel MCA. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} Emanuel MCA. Todos los derechos reservados.
         </div>
       </div>
     </footer>

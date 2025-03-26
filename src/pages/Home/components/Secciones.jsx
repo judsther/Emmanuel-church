@@ -2,6 +2,8 @@
 
 //<hr className="border-2 border-indigo-400 rounded-4xl px-44 md:px-96 my-5" />
 
+import { Link } from "react-router-dom";
+
 export default function Secciones() {
   return (
 <>
@@ -22,6 +24,7 @@ export default function Secciones() {
             </p>
           </h2>
         </div>
+       <Link to="/ministerios">
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-heart p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>
@@ -31,6 +34,8 @@ export default function Secciones() {
             </p>
           </h2>
         </div>
+        </Link>
+        <Link to="/proyectos">
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-house p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>
@@ -40,6 +45,7 @@ export default function Secciones() {
             </p>
           </h2>
         </div>
+        </Link>
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 transform -outline-offset-4 transition-transform duration-300 hover:scale-105">
         <i className="bi bi-person p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>

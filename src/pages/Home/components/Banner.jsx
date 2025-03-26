@@ -1,7 +1,7 @@
 
 //<section className="relative bg-[url(https://res.cloudinary.com/djsdqleik/image/upload/v1738612001/church/lgxwlwedwnklfboclz4t.jpg)] w-screen h-85 md:h-140 bg-cover flex items-center justify-start"></section>
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -18,9 +18,8 @@ export default function Banner() {
            <section className="bg-cover relative w-full h-[300px] md:h-[600px] overflow-hidden flex items-center justify-start">
       {/* Carrusel de Imágenes */}
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }}
         loop={true}
         className="absolute top-0 left-0 w-full h-full"
       >
