@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-800 text-gray-400 py-8">
+    <footer className="bg-zinc-800 text-gray-400 py-8 overflow-y-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <p className="text-lg font-semibold text-zinc-400">Emmanuel M.C.A.</p>
         <p className="mt-2 text-sm">Llevando el mensaje de amor y esperanza.</p>

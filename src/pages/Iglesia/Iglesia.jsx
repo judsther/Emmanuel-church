@@ -1,36 +1,58 @@
-import MailForm from "../../components/MailForm";
-import Socials from "../../components/Socials";
+import Mapa from "./components/Mapa"
+
 
 export default function Iglesia() {
+
+  const images = [
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424200/484119913_1063986469091957_5967134497165308574_n_nr8kkl.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424199/484108139_1063986529091951_132258474771696987_n_lkekvh.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424191/481991134_1060656796091591_1345340539620723581_n_qvtlhb.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424189/480716812_3375464829254665_4315484884471608745_n_yedia3.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424206/484382143_1067002115457059_7797616091610669051_n_tapghb.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424203/484313287_1063986309091973_375395124324652774_n_kox6sy.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424189/34087925_1226920637442439_7264178926182727680_n_pwmjnj.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424199/484188794_1063986189091985_1348106853948501642_n_mrbzwv.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1742424204/484411035_1063986665758604_5279342218186758903_n_l0rvtw.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1738611993/church/raxku17tardolx5yybr0.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1738611988/church/sgwdtkkasafpykzirsfw.jpg"
+    },
+    {
+      src: "https://res.cloudinary.com/djsdqleik/image/upload/v1738611997/church/pdqbmaensbw2xckpe3y8.jpg"
+    }
+    
+  ]
+
+
   return (
     <div>
-      <section className="md:h-[550px] h-auto w-screen bg-neutral-200">
-<div className="flex md:flex-row flex-col h-full w-full pt-20 md:pt-0">
+       <section className="w-auto h-auto bg-center bg-cover bg-[url(https://res.cloudinary.com/djsdqleik/image/upload/v1742424191/481991134_1060656796091591_1345340539620723581_n_qvtlhb.jpg)]">
 
-<div className="flex items-center justify-center h-full md:w-1/2 w-full ">
-<p className="h-full w-full flex flex-col items-center justify-center px-8 text-center" >
-<span className="font-extrabold text-5xl text-indigo-900"> ¡Visítanos!</span><span className="py-4 font-extrabold text-3xl text-indigo-900">  Te esperamos en nuestra dirección:</span>
-  Ubicados en 1A Calle Poniente, frente a Pizza Hut en San Vicente, El Salvador. Si no sabes cómo llegar, haz clic en el mapa para obtener indicaciones.
-</p>
+<div className="bg-zinc-800/70 h-68 flex items-center justify-center">
+<p className="text-center font-bold italic text-3xl text-amber-300">¡Tu casa te espera!</p>
 </div>
-<div className="flex items-center justify-center h-full md:w-1/2 w-full">
-<a
-  href="https://maps.app.goo.gl/BJiu2LiQj2aXuUdB7"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block w-80 h-80 md:w-[500px] my-5 md:my-0 md:h-[500px] rounded-full overflow-hidden shadow-sm active:shadow-none hover:size-[520px] transition-all duration-300"
->
-  <img
-    className="object-cover h-full w-full"
-    src="https://res.cloudinary.com/djsdqleik/image/upload/v1742493259/Screenshot_2025-03-20_at_11.53.51_AM_zhhqyl.png"
-    alt="Mapa de ubicación de Iglesia Emanuel de San Vicente"
-  />
-</a>
-
-</div>
-
-</div>
-      </section>
+        </section>
+<Mapa />
 
       <section className="w-screen h-auto md:h-[550px] bg-neutral-800">
         <div className="flex flex-col-reverse md:flex-row gap-2">
@@ -52,18 +74,15 @@ export default function Iglesia() {
 
       </section>
 
-      <section className="w-screen h-[800px] md:h-[550px] bg-neutral-100 md:p-10">
-      <div className="w-full h-full flex flex-col md:flex-row lg:gap-60 gap-10 items-center justify-center text-center ">
-        <div className="text-4xl text-neutral-600 flex flex-col items-center justify-center">
-          <p className="text-3xl font-extrabold mb-4 text-neutral-700">Ponte en contacto con nosotros:</p>
-          
-          <Socials />
-       
-        </div>
-      <div className="flex items-center justify-center  w-96 p-4 rounded-md text-zinc-600  md:border-2 border-neutral-500">
-       <MailForm />
-      </div>
-      </div>
+      <section className="w-screen h-[420px] md:h-[350px] flex items-center flex-col justify-center bg-neutral-800">
+        <p className="text-white text-3xl font-bold text-center mb-9">Galería:</p>
+   <div className="w-full h-auto flex items-center overflow-x-auto snap-x snap-mandatory scroll-smooth">
+{images.map((img, index) => (
+  <div key={index} className=" flex-shrink-0 snap-center ">
+       <img src={img.src} alt="" className="w-full h-64 object-cover overflow-x-auto" />
+</div>
+))}
+</div>
       </section>
 
 

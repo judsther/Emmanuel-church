@@ -13,7 +13,7 @@ export default function Actividades() {
   ];
 
   return (
-    <div className="py-8 rounded-lg flex flex-col items-center">
+    <div className="py-8 rounded-lg flex flex-col items-center  overflow-x-hidden">
 
       <div className="flex flex-col md:flex-row items-center gap-15 md:px-0 px-12">
         <div className="bg-amber-300 p-1 rounded-md">
