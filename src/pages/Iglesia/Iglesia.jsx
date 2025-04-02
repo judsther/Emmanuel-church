@@ -79,9 +79,9 @@ export default function Iglesia() {
    <div className="w-auto h-auto flex items-center overflow-x-auto snap-x snap-mandatory scroll-smooth">
 {images.map((img, index) => (
   <div key={index} className=" flex-shrink-0 snap-center ">
-  <div className=" h-full w-full">
-       <img src={img.src} alt="" className="w-full h-64 object-contain overflow-x-auto" />
-  </div>
+ 
+       <img src={img.src} alt="" className="w-full h-64 object-contain" />
+ 
 </div>
 ))}
 </div>
