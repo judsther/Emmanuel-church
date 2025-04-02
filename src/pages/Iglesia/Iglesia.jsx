@@ -74,13 +74,13 @@ export default function Iglesia() {
 
       </section>
 
-      <section className="w-screen h-[420px] md:h-[350px] flex items-center flex-col justify-center bg-neutral-800">
+      <section className="w-screen h-[420px] md:h-[350px] flex items-center flex-col justify-center flex-nowrap gap-0 bg-neutral-800">
         <p className="text-white text-3xl font-bold text-center mb-9">Galería:</p>
    <div className="flex items-center overflow-x-auto scroll-smooth">
 {images.map((img, index) => (
-  <div key={index} className=" flex-shrink-0">
+  <div key={index} className="max-w-[600px] flex-shrink-0">
  
-       <img src={img.src} alt="" className="w-auto h-64 object-contain" />
+       <img src={img.src} alt="" className="w-full h-64 object-contain" />
  
 </div>
 ))}
