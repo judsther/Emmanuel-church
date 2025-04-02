@@ -14,7 +14,7 @@ export default function Secciones() {
 
        <section className="h-[350px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-white font-semibold text-center text-2xl md:mt-5">
         <div className="flex flex-row gap-8 w-max h-[300px] mx-10 md:mx-20 ">
-
+       <Link to="/oracion">
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-box2-heart p-3 text-5xl text-amber-300"></i>
           <h2 className="" style={{ fontSize: "18pt", placeItems: "center" }}>
@@ -24,6 +24,7 @@ export default function Secciones() {
             </p>
           </h2>
         </div>
+        </Link>
        <Link to="/ministerios">
         <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-heart p-3 text-5xl text-amber-300"></i>

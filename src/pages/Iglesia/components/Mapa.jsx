@@ -4,15 +4,24 @@ export default function Mapa() {
   return (
     <div>
             <section className="md:h-[550px] h-auto w-screen bg-neutral-200">
-<div className="flex md:flex-row flex-col h-full w-full pt-20 md:pt-0">
+<div className="flex md:flex-row flex-col h-full w-full pt-10 md:pt-0">
 
-<div className="flex items-center justify-center h-full md:w-1/2 w-full ">
-<p className="h-full w-full flex flex-col items-center justify-center px-8 text-center" >
-<span className="py-4 font-extrabold text-3xl text-indigo-900">  Te esperamos en nuestra dirección:</span>
+<div className="flex flex-col items-star justify-center h-full  w-full md:ps-20 ps-5">
+<p className="mb-8" >
+<span className="py-4 font-extrabold text-3xl text-indigo-900 text-center">  Visítanos en nuestra dirección: <br /></span>
   Ubicados en 1A Calle Poniente, frente a Pizza Hut en San Vicente, El Salvador. Si no sabes cómo llegar, haz clic en el mapa para obtener indicaciones.
 </p>
+<p className="text-2xl md:text-xl font-extrabold mb-1 text-zinc-600">
+        Horarios:
+        </p>
+        <p style={{fontSize:"14pt"}} className="md:text-2xl font-medium mb-7">
+            <span className="text-indigo-900">Domingo:</span> Culto domínical 9:00am y culto general 4:30pm <br />
+            <span className="text-indigo-900">Lunes:</span> Oración 5:00pm <br />
+            <span className="text-indigo-900">Miércoles:</span> Estudio bíblico 5:00pm <br />
+            <span className="text-indigo-900">Jueves:</span> Culto femenil 4:30pm <br />
+        </p>
 </div>
-<div className="flex items-center justify-center h-full md:w-1/2 w-full">
+<div className="flex items-center justify-center h-full md:w-1/2 w-full md:mx-40">
 <a
   href="https://maps.app.goo.gl/BJiu2LiQj2aXuUdB7"
   target="_blank"

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Iglesia from './pages/Iglesia/Iglesia'
 import Proyectos from './pages/Proyectos/Proyectos'
 import Contacto from './pages/Contacto/Contacto'
+import Oracion from './pages/Oracion/Oracion'
 
 function App() {
  
@@ -22,6 +23,7 @@ function App() {
          <Route path="/iglesia" element={<Iglesia />} />
          <Route path="/proyectos" element={<Proyectos />} />
          <Route path="/contacto" element={<Contacto />} />
+         <Route path="/oracion" element={<Oracion />} /> 
        </Routes>
        <Footer />
      </BrowserRouter>

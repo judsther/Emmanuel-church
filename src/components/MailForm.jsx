@@ -104,7 +104,7 @@ export default function MailForm() {
         </div>
         <button
           type="submit"
-          className="py-2 px-4 mt-3 bg-indigo-500 border border-amber-400 hover:bg-amber-200 active:bg-amber-200 shadow-md text-center text-white hover:text-zinc-600 active:text-zinc-600 rounded font-sans font-semibold"
+          className="py-2 px-4 mt-3 bg-indigo-900 border border-amber-400 hover:bg-amber-200 active:bg-amber-200 shadow-md text-center text-white hover:text-zinc-600 active:text-zinc-600 rounded font-sans font-semibold"
         >
           Enviar
         </button>

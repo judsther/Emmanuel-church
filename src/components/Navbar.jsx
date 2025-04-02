@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link to="/">
               <img className="h-10 w-auto absolute transition-opacity duration-300 group-hover:opacity-0 active:opacity-0" 
               src="https://res.cloudinary.com/djsdqleik/image/upload/v1741453742/Subtract_qhklqx.png" alt="Logo" />
-              <img className="h-10 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100 active:opacity-100" 
+              <img className="h-10 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100 active:size-12" 
               src="https://res.cloudinary.com/djsdqleik/image/upload/v1739662964/church/tjekueix26jhmgsrhta3.png" alt="Logo" />
               </Link>
 

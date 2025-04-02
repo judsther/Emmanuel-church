@@ -14,10 +14,10 @@ export default function Headline() {
           Somos iglesia &quot;Emanuel&quot; Misión Centroamericana de San Vicente. <br />Congrégate con nosotros.
         </p>
         <p className="text-2xl md:text-3xl font-extrabold mb-1">
-        Horarios de Servicio:
+        Horarios:
         </p>
         <p style={{fontSize:"14pt"}} className="md:text-2xl font-medium mb-7">
-            <span className="text-indigo-800">Domingo:</span> Culto domínical 9:00am y culto general 4:30pm <br />
+            <span className="text-indigo-800">Domingo:</span> Culto domínical 9:30am y culto general 4:00pm <br />
             <span className="text-indigo-800">Lunes:</span> Oración 5:00pm <br />
             <span className="text-indigo-800">Miércoles:</span> Estudio bíblico 5:00pm <br />
             <span className="text-indigo-800">Jueves:</span> Culto femenil 4:30pm <br />
