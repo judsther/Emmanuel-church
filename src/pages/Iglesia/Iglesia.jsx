@@ -80,7 +80,7 @@ export default function Iglesia() {
 {images.map((img, index) => (
   <div key={index} className=" flex-shrink-0">
  
-       <img src={img.src} alt="" className="w-full h-64 object-contain" />
+       <img src={img.src} alt="" className="w-auto h-64 object-contain" />
  
 </div>
 ))}
