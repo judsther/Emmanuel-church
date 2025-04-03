@@ -12,3 +12,7 @@
     }
   }
   
+  img.gallery-img {
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+  }
