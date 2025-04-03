@@ -95,7 +95,7 @@ export default function Iglesia() {
           <img 
             src={img.src} 
             alt={img.alt || "Imagen de galería"} 
-            className="h-full w-full object-cover rounded-lg"
+            className="h-[100px] w-full object-cover rounded-lg"
           />
         </div>
       ))}
