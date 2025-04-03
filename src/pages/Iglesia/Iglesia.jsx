@@ -86,17 +86,20 @@ export default function Iglesia() {
   </p>
 
   <div className="w-full overflow-x-auto scroll-smooth whitespace-nowrap">
-    <div className="inline-flex h-58 space-x-4"> 
+    <div className="inline-flex h-auto space-x-4"> 
       {images.map((img, index) => (
+       
         <div 
           key={index} 
-          className="inline-block h-58 w-fit flex-shrink-0" 
+          className="inline-block flex-shrink-0" 
         >
+           <div className="h-58 w-auto flex items-center justify-center">
           <img 
             src={img.src} 
             alt={img.alt || "Imagen de galería"} 
             className="h-full w-full object-cover rounded"
           />
+          </div>
         </div>
       ))}
     </div>
