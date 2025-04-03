@@ -85,7 +85,7 @@ export default function Iglesia() {
     Galería:
   </p>
 
-  <div className="w-full overflow-x-auto scroll-smooth whitespace-nowrap">
+  <div className="w-full overflow-x-auto overflow-y-hidden scroll-smooth whitespace-nowrap">
     <div className="inline-flex h-48 space-x-4"> 
       {images.map((img, index) => (
         <div 
