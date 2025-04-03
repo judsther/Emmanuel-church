@@ -15,7 +15,7 @@ export default function Bautismo() {
 <div className="z-10">
 <p className=" text-[12pt] md:text-2xl">
  
-El bautismo es un acto de obediencia y una declaración pública de fe en Jesús. Es el símbolo de una nueva vida en Cristo, donde dejamos atrás nuestra vieja manera de vivir y nos levantamos renovados en Él. En nuestra iglesia, creemos que el bautismo es un paso de fe y un privilegio para todo aquel que ha aceptado a Jesús como su Señor y Salvador. 
+El bautismo es un acto de obediencia y una declaración pública de fe en Jesús. Es el símbolo de una nueva vida en Cristo, donde dejamos atrás nuestra vieja manera de vivir y nos levantamos renovados en Él. En nuestra misión, sabemos que el bautismo es un paso de fe y obediencia para todo aquel que ha aceptado a Jesús como su Señor y Salvador. 
 <br />
 <br />
 <span className="italic">
@@ -23,7 +23,7 @@ El bautismo es un acto de obediencia y una declaración pública de fe en Jesús
  </span>
  <br />
 <br />
-Si deseas dar este paso y rendir tu vida a Cristo, estamos aquí para acompañarte en este hermoso camino. ¡Contáctanos para más información! 
+Si deseas dar este paso y rendir tu vida a Cristo, estamos aquí para acompañarte en este hermoso camino. 
 </p>
 </div>
 </div>

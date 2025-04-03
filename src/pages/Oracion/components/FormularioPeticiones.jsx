@@ -27,7 +27,7 @@ export default function FormularioPeticiones() {
   return (
     <div className="flex flex-col gap-4 items-center justify-center h-auto p-4 m-4">
       <h2>Comparte tu petición</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center justify-center container outline-2 outline-amber-300 bg-neutral-600 rounded md:w-4xl p-4">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center justify-center container outline-2 outline-amber-300 bg-neutral-600 rounded md:w-2xl p-4">
         <div className="flex items-start w-full">
         <label htmlFor="nombre" className="me-1 text-white">
             Nombre:

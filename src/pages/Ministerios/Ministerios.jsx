@@ -17,8 +17,8 @@ export default function Ministerios() {
       <section className="w-screen h-auto bg-neutral-100">
         
 
-        <div className="h-auto pt-18 md:pt-0 flex items-center justify-center text-[18px] text-center md:text-end bg-neutral-800">
-      <p className="leading-relaxed font-extrabold text-2xl py-36 p-2 italic text-amber-200" >DESCUBRE TU <span className="underline decoration-indigo-400 decoration-dotted">LLAMADO</span>, SIRVE CON PASIÓN.</p>
+        <div className="h-auto flex items-center justify-center text-[18px] text-center md:text-end bg-neutral-800">
+      <p className="leading-relaxed font-extrabold text-2xl py-36 p-2 italic text-amber-200" >DESCUBRE TU <span className="underline decoration-indigo-400 decoration-dotted">LLAMADO</span>.</p>
      </div>
 
       <div className="h-auto md:h-full flex md:items-center items-end py-10 justify-center mx-18">
@@ -34,7 +34,7 @@ export default function Ministerios() {
       {/*text */}
       <section className="h-[450px] md:h-[550px] bg-neutral-200">
       <div className="w-full h-full flex flex-col items-center justify-center md:px-30 px-5 text-[18px] text-center">
-      <p className="md:text-3xl mb-6">Los ministerios de nuestra iglesia son espacios abiertos donde cada persona tiene el privilegio de servir al Señor según sus talentos y pasiones. Ya sea a través de la música, la enseñanza, la ayuda social o cualquier otra área, aquí encontrarás un lugar donde Dios puede usarte para bendecir a otros.</p>  
+      <p className="md:text-3xl mb-6">Los ministerios de nuestra iglesia son espacios abiertos donde cada miembro tiene el privilegio de servir al Señor según sus talentos y pasiones. Ya sea a través de la música, la enseñanza, la ayuda social o cualquier otra área, aquí encontrarás un lugar donde Dios puede usarte para bendecir a otros.</p>  
 <p className="md:text-2xl italic">
 &quot;Cada uno según el don que ha recibido, minístrelo a los otros, como buenos administradores de la multiforme gracia de Dios.&quot; — 1 Pedro 4:10
 </p>

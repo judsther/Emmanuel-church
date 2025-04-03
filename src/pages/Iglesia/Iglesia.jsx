@@ -63,7 +63,7 @@ export default function Iglesia() {
           <div className="flex items-center justify-center md:w-1/2">
             <p className="md:p-20 p-4 text-white flex flex-col">
               <span className="py-4 font-extrabold text-3xl">
-                Un Poco de Nuestra Historia.
+                Un Poco de Nuestra Historia
               </span>
               La Iglesia Misión Centroamericana &quot;Emanuel&quot; en San
               Vicente, El Salvador, forma parte de la Misión Centroamericana

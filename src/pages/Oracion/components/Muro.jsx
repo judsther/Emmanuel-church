@@ -20,7 +20,9 @@ export default function Muro() {
       
       {peticiones.map((peticion) => (
         <div key={peticion.id} 
-        className="shadow-md p-4 rounded w-[300px] h-auto bg-neutral-50">
+        className="shadow-md p-4 rounded w-[300px] h-auto bg-neutral-50"
+        style={{ alignSelf: "flex-start" }}
+        >  
           <strong className="text-zinc-600" >{peticion.name}</strong> 
           <p>{peticion.requestMsg}</p> 
           <small className="text-zinc-400">

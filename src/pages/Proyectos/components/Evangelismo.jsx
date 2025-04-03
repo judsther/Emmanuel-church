@@ -9,7 +9,7 @@ export default function Evangelismo() {
   <div className="flex items-end flex-col p-6 text-zinc-600">
    <div className="">
   <p className="text-[20pt] text-end md:text-3xl font-bold ">
-      Impactos Evangelísticos. 
+      Impactos Evangelísticos 
   </p>
   </div>
   <div className="text-end">

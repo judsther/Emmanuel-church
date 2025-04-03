@@ -9,7 +9,7 @@ export default function Clinica() {
 <div className="flex  flex-col justify-center p-6 text-zinc-600">
  <div className="">
 <p className="text-[20pt] md:text-3xl font-bold ">
-Clínica Emanuel. 
+Clínica Emanuel
 </p>
 </div>
 <div className="z-10">

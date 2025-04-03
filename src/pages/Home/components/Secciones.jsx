@@ -8,11 +8,11 @@ export default function Secciones() {
   return (
 <>
 <section className="overflow-hidden h-[500px] bg-neutral-100 ">
-<div className=" h-full flex flex-col items-center justify-center">
+<div className=" h-full flex flex-col items-center justify-center pe-2">
 
 
 
-       <section className="h-[440px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-zinc-700 font-semibold text-center text-2xl ">
+       <section className="h-[440px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-zinc-700 font-semibold text-center text-2xl md:me-0 me-5 md:pe-0 pe-5">
         <div className="flex flex-row gap-15 w-max h-[350px] mx-10 md:mx-0 ">
        <Link to="/oracion">
         <div className="flex-col h-[350px] w-[300px] p-12 flex items-center rounded-[10pt] shadow-md shadow-gray-600 active:shadow-none justify-center bg-neutral-100 outline-4 outline-indigo-900 transform transition-transform duration-300 hover:scale-105">
