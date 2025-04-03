@@ -1,9 +1,8 @@
 
 import Banner from "./components/Banner";
-import TextoBanner from "./components/TextoBanner";
 import Secciones from "./components/Secciones";
-import Clinica from "./components/Clinica";
 import Headline from "./components/Headline";
+import Texto from "./components/Texto";
 
 
 
@@ -12,11 +11,11 @@ export default function Home() {
     <>
 <div className="">
   
-      <TextoBanner />
+     
       <Banner />
       <Headline />
       <Secciones />
-      <Clinica />
+      <Texto />
   
      </div>
     </>

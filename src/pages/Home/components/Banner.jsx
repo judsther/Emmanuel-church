@@ -14,8 +14,25 @@ const images = [
 
 export default function Banner() {
   return (
- 
+ <>
+  <div className="flex items-center">
+            <div className="absolute flex ms-10 lg:ms-28 text-white text-start items-center z-10 mt-80 md:mt-[550px]">
+          <p className="text-4xl md:text-8xl font-extrabold flex flex-col">
+            ¡Sólo <br />
+            <span className="font-stretch-semi-expanded text-amber-300">
+              Jesucristo
+            </span>
+            
+            <span className="">
+              salva!
+            </span>
+          </p>
+
+     
+        </div>
+    </div>
            <section className="bg-cover relative w-full h-[300px] md:h-[600px] overflow-hidden flex items-center justify-start">
+            
       {/* Carrusel de Imágenes */}
       <Swiper
         modules={[Autoplay]}
@@ -35,6 +52,6 @@ export default function Banner() {
         </Swiper>
         <div className="absolute inset-0 bg-zinc-900/65 z-1"></div>
       </section>
-   
+      </>
   );
 }

@@ -7,55 +7,58 @@ import { Link } from "react-router-dom";
 export default function Secciones() {
   return (
 <>
-<section className="overflow-hidden h-[470px] bg-neutral-200 ">
+<section className="overflow-hidden h-[500px] bg-neutral-100 ">
 <div className=" h-full flex flex-col items-center justify-center">
-<p className="flex items-center justify-center text-center md:text-5xl text-3xl font-bold text-zinc-700 mt-4 md:mt-2">Queremos conocerte.</p>
 
 
-       <section className="h-[350px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-white font-semibold text-center text-2xl md:mt-5">
-        <div className="flex flex-row gap-8 w-max h-[300px] mx-10 md:mx-20 ">
+
+       <section className="h-[440px] w-full overflow-x-auto scrollbar-hide flex lg:justify-center items-center text-zinc-700 font-semibold text-center text-2xl ">
+        <div className="flex flex-row gap-15 w-max h-[350px] mx-10 md:mx-0 ">
        <Link to="/oracion">
-        <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
+        <div className="flex-col h-[350px] w-[300px] p-12 flex items-center rounded-[10pt] shadow-md shadow-gray-600 active:shadow-none justify-center bg-neutral-100 outline-4 outline-indigo-900 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-box2-heart p-3 text-5xl text-amber-300"></i>
           <h2 className="" style={{ fontSize: "18pt", placeItems: "center" }}>
-            Oración
-            <p style={{ fontSize: "14pt" }} className="font-light">
+          <span className="bg-amber-300 px-2 text-zinc-800 rounded">Oración</span>
+            <p style={{ fontSize: "14pt" }} className="font-light mt-3">
               Déjanos orar por tu petición.
+              Accede aquí a nuestro muro de oración y escribe tu petición. 
             </p>
           </h2>
         </div>
         </Link>
        <Link to="/ministerios">
-        <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
+        <div className="flex-col h-[350px] w-[300px] p-12 flex items-center rounded-[10pt] shadow-md shadow-gray-600 active:shadow-none justify-center bg-neutral-100 outline-4 outline-indigo-900 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-heart p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>
-            Ministerios
-            <p style={{ fontSize: "14pt" }} className="font-light">
-              Únete y sirve con nosotros.
+            <span className="bg-amber-300 px-2 text-zinc-800 rounded">Ministerios</span>
+            <p style={{ fontSize: "14pt" }} className="font-light mt-3">
+              Únete y sirve con nosotros. Aquí puedes conocer todos nuestros ministerios y cómo involucrarte.
             </p>
           </h2>
         </div>
         </Link>
         <Link to="/proyectos">
-        <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 -outline-offset-4 transform transition-transform duration-300 hover:scale-105">
+        <div className="flex-col h-[350px] w-[300px] p-12 flex items-center rounded-[10pt] shadow-md shadow-gray-600 active:shadow-none justify-center bg-neutral-100 outline-4 outline-indigo-900 transform transition-transform duration-300 hover:scale-105">
         <i className="bi bi-house p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>
-            Actividades
-            <p style={{ fontSize: "14pt" }} className="font-light">
-              ¡Cuán bueno es habitar juntos!
+            <span className="bg-amber-300 px-2 text-zinc-800 rounded">Actividades</span>
+            <p style={{ fontSize: "14pt" }} className="font-light mt-3">
+              ¡Cuán bueno es habitar juntos! Entra y conoce nuestras actividades y fechas.
             </p>
           </h2>
         </div>
         </Link>
-        <div className="flex-col h-full w-[300px] p-12 flex items-center rounded-full justify-center bg-indigo-900 outline-neutral outline-4 transform -outline-offset-4 transition-transform duration-300 hover:scale-105">
+        <Link to="/contacto">
+        <div className="flex-col h-[350px] w-[300px] p-12 flex items-center rounded-[10pt] shadow-md shadow-gray-600 active:shadow-none justify-center bg-neutral-100 outline-4 outline-indigo-900 transition-transform duration-300 hover:scale-105">
         <i className="bi bi-person p-3 text-5xl text-amber-300"></i>
           <h2 className="place-items-center" style={{ fontSize: "18pt", placeItems: "center"  }}>
-            Visitación
-            <p style={{ fontSize: "14pt" }} className="font-light">
-              Solicita una visita pastoral.
+            <span className="bg-amber-300 px-2 text-zinc-800 rounded">Visitación</span>
+            <p style={{ fontSize: "14pt" }} className="font-light mt-2">
+              Solicita una visita pastoral por medio de nuestros medios de contacto.
             </p>
           </h2>
         </div>
+        </Link>
         </div>
       
       </section>

@@ -17,20 +17,20 @@ export default function Actividades() {
 
       <div className="flex flex-col md:flex-row items-center gap-15 md:px-0 px-12">
         <div className="bg-amber-300 p-1 rounded-md">
-      <Calendar onChange={setDate} value={date} className="rounded-md bg-amber-200" />
+      <Calendar onChange={setDate} value={date} className="rounded-md bg-amber-300" />
       </div>
         <div className="w-full">
         <p className="text-center text-gray-600 mb-6">
         Te esperamos en nuestras actividades próximas. ¡No te las pierdas!
       </p>
-      <h2 className="text-2xl font-bold text-start text-indigo-800 mb-4">Próximas Actividades</h2>
+      <h2 className="text-2xl font-bold text-start text-indigo-900 mb-4">Próximas Actividades</h2>
           <ul className="space-y-2">
             {activities.map((event, index) => (
               <li
                 key={index}
-                className="p-3 bg-indigo-100 border-l-4 border-indigo-800 rounded-md shadow-sm text-zinc-700"
+                className="p-3 bg-indigo-100 border-l-4 border-indigo-900 rounded-md shadow-sm text-zinc-700"
               >
-            <i className="bi bi-calendar-fill text-indigo-800"></i>  <strong>{event.date}:</strong> {event.title}
+            <i className="bi bi-calendar-fill text-indigo-900"></i>  <strong>{event.date}:</strong> {event.title}
               </li>
             ))}
           </ul>

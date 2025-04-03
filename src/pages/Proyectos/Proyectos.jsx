@@ -1,5 +1,6 @@
 import Actividades from "./components/Actividades";
 import Bautismo from "./components/Bautismo";
+import Clinica from "./components/Clinica";
 import Evangelismo from "./components/Evangelismo";
 
 
@@ -16,6 +17,7 @@ export default function Proyectos() {
    
  <Bautismo />
  <Evangelismo />
+ <Clinica />
  <Actividades />
     </div>
   )

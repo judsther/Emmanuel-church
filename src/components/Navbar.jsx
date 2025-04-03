@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-end">
-    <nav className=" fixed rounded-4xl bg-indigo-800 m-6 z-50 drop-shadow-lg shadow-zinc-800">
+    <nav className=" fixed rounded-4xl bg-indigo-900 m-6 z-50 drop-shadow-lg shadow-zinc-800">
       <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="inset-y-0 left-0 flex items-center sm:hidden">
@@ -44,6 +44,7 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4 ms-4">
+              <Link to="/" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-300 hover:text-gray-600">Inicio</Link>
               <Link to="/iglesia" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-300 hover:text-gray-600">Iglesia</Link>
                 <Link to="/ministerios" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-300 hover:text-gray-600">Ministerios</Link>
                 <Link to="/proyectos" className="rounded-4xl px-3 py-4 text-sm font-medium text-white hover:bg-amber-300 hover:text-gray-600">Proyectos</Link>
@@ -57,6 +58,7 @@ export default function Navbar() {
       {/* Menú móvil controlado por estado */}
       <div className={`${menuOpen ? "block" : "hidden"} sm:hidden`} id="mobile-menu">
         <div className="space-y-1 px-2 pt-2 pb-3">
+        <Link to="/" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Inicio</Link>
           <Link to="/iglesia" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Iglesia</Link>
           <Link to="/ministerios" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Ministerios</Link>
           <Link to="/proyectos" className="rounded-4xl block active:bg-gray-900 px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-gray-600">Proyectos</Link>
