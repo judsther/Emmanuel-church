@@ -8,16 +8,6 @@ export default function Socials() {
           <i className="bi bi-facebook"></i>
           <p className="pl-2 text-[12pt] underline">Misión Centroamericana &quot;Emanuel&quot;</p>
         </a>
-        <a href="https://www.instagram.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 flex flex-row items-center">
-          <i className="bi bi-instagram"></i>
-          <p className="pl-2 text-[12pt] underline">MCA Iglesia &quot;Emanuel&quot;</p>
-
-        </a>
-        <a href="https://wa.me/TU_NUMERO" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 flex flex-row items-center">
-          <i className="bi bi-whatsapp"></i>
-          <p className="pl-2 text-[12pt] underline">1234-5678</p>
-
-        </a>
       
       </div>
    

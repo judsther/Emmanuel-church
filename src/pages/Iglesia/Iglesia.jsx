@@ -73,8 +73,7 @@ export default function Iglesia() {
               <br />
               <br />
               Iglesia &quot;Emanuel&quot; fue fundada en la ciudad de San
-              Vicente en el año 1939 bajo el nombre de &quot;Rosa de Sarón&quot;
-              por los misioneros estadounidenses...
+              Vicente en el año 1939 bajo el nombre de &quot;Rosa de Sarón&quot;.
             </p>
           </div>
         </div>

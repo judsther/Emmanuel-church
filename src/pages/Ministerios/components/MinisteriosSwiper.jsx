@@ -21,7 +21,7 @@ export default function MinisteriosSwiper({imagenes}) {
                       className="object-cover h-full w-full rounded-xl"
                     />        
                 </div>
-                <p className="text-zinc-700 font-medium mt-1 mb-4 mx-4"><span className="font-black">{img.title}<br/></span>{img.description}</p>
+                <p className="text-zinc-700 font-medium mt-1 mb-4 mx-4"><span className="font-black text-2xl text-indigo-900">{img.title}<br/></span><span className='font-bold'>Misión: </span>{img.description}</p>
            </div>))}
            </div>
         </div>

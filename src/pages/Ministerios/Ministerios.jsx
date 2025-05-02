@@ -25,9 +25,6 @@ export default function Ministerios() {
       <MinisteriosProp/>
       </div>
 
-   
-
-   
       </section>
       
 
